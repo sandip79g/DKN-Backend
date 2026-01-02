@@ -64,7 +64,7 @@ class User(Base):
     artifacts = relationship("KnowledgeArtifact", back_populates="created_by_user")
     ratings = relationship("Rating", back_populates="rated_by_user")
     reviews = relationship("ArtifactReviewStatus", back_populates="reviewed_by_user")
-    community_follows = relationship("CommunityFollow", back_populates="user")
+  
 
 
 class KnowledgeArtifact(Base):
